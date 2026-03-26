@@ -13,8 +13,12 @@ app.use(express.json());
 const pool = new Pool({});
 
 // =======================
-// Healthcheck 
+// Healthcheck
 // =======================
+
+app.get("/health", (_, res) => {
+  res.send("ok");
+});
 
 // =======================
 // CRUD NOTES
