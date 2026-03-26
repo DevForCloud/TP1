@@ -10,7 +10,13 @@ app.use(express.json());
 // Configuration DB
 // =======================
 
-const pool = new Pool({});
+const pool = new Pool({
+  host: process.env.POSTGRES_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.POSTGRES_USER,
+  password: process.env.POSTGRES_PASSWORD,
+  database: process.env.POSTGRES_DB,
+});
 
 // =======================
 // Healthcheck
