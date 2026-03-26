@@ -1,4 +1,5 @@
 # TP 1 
+Nicolas PATINO - Jean Paul LALANDE
 
 Pour lancer le projet il faut d'abord se placer dans le dossier `api/` et crée un fichier `.env` a partir du fichier `.env-template`, ensuite il faut lancer la commande `docker compose up --build` pour construire les images et lancer les conteneurs.
 
