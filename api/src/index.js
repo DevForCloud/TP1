@@ -85,7 +85,7 @@ app.delete("/notes/:id", async (req, res) => {
 // Start server
 // =======================
 
-let port = 3000;
+const port = Number(process.env.PORT) || 3000;
 
 app.listen(port, () => {
   console.log(`API running on port ${port}`);
